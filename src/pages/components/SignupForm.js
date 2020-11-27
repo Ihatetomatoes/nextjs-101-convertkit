@@ -31,7 +31,11 @@ const SignupForm = ({ title }) => {
     "opacity-50 cursor-not-allowed": isLoading,
   });
 
-  const onSubmit = (data) => console.log({ data });
+  const subscribe = async ({ email }) => {
+    const res = await fetch(`/api/subscribe?email=${email}`);
+  };
+
+  const onSubmit = (data) => subscribe(data);
 
   return (
     <>
