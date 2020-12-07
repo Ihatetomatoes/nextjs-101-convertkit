@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Next.js 101</title>
+        <title>Next.js 101 - Free Online Course</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
