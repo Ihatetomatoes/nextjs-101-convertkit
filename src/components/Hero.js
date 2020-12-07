@@ -1,4 +1,4 @@
-import { Tick } from "../../icons";
+import { Tick } from "../icons";
 import SignupForm from "./SignupForm";
 
 const outcomes = [
