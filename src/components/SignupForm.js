@@ -31,10 +31,14 @@ const SignupForm = ({ title }) => {
     }
   };
 
-  const [
+  const {
     mutate,
-    { isSuccess, isLoading, isError, error, reset },
-  ] = useMutation((data) => subscribe(data));
+    isSuccess,
+    isLoading,
+    isError,
+    error,
+    reset,
+  } = useMutation((data) => subscribe(data));
 
   const onSubmit = (data) => mutate(data);
 
